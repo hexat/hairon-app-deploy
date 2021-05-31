@@ -23,6 +23,6 @@ app.get('/noticias', function(req,res){
     res.render('noticias/noticia');
 });
 
-app.listen(5000, function(){
+app.listen(process.env.PORT || 5000, function(){
     console.log("Servidor rodando com Express");
 });
